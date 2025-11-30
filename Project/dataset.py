@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-NUM_ROWS = 1000
+NUM_ROWS = 10000
 np.random.seed(42) 
 # To generate features
 # Pclass: More people in class 3 than class 1
@@ -41,4 +41,5 @@ try:
     print(f"Success! Generated {NUM_ROWS} rows in 'large_disaster_dataset.xlsx'")
     print(df.head())
 except ImportError:
+
     print("Error: You need openpyxl installed. Run: pip install openpyxl")
